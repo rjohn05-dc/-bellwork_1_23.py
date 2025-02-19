@@ -21,7 +21,7 @@ def check_divisibility(num):
 
 # Part2
 def square_and_cube(num):
-    return num**2, num**3
+    pass
 
 # Part2b
 def greet_user(name):
