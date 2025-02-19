@@ -17,12 +17,11 @@ def check_divisibility(num):
     if num % 3 == 0 and num % 5 == 0:
         print(f"{num} is divisible by both 3 and 5.")
     else:
-        # print(f"{num} is not divisible by both 3 and 5.")
+        print(f"{num} is not divisible by both 3 and 5.")
 
 # Part2
 def square_and_cube(num):
-    pass
-
+    return (num ** 2, num ** 3)
 # Part2b
 def greet_user(name):
     return "Hello, " + name + "!"
@@ -30,6 +29,22 @@ def greet_user(name):
 # part3
 for num in range(2, 21, 2):
     print(num, end=", ")
-print()
+
+# part3b
+while True:
+    user_input = input("Enter a number (or type 'exit' to quit): ")
+    
+    if user_input.lower() == "exit":
+        break  # Exit the loop
+    
+    if user_input.isdigit():  # Check if input is a number
+        num = int(user_input)
+        if num % 2 == 0:
+            print(f"{num} is even.")
+        else:
+            print(f"{num} is odd.")
+    else:
+        print("Invalid input. Please enter a number or 'exit'.")
+
 
 
